@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.564">
+    <testcase classname="feature to test google search functionality" name="Validate google search is working" time="19.132">
+        <failure message="session not created: This version of ChromeDriver only supports Chrome version 94&#10;Current browser version is 97.0.4692.71 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-83DRFKP', ip: '192.168.43.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00F2BDE3+2473443]&#10;&#9;Ordinal0 [0x00EC6661+2057825]&#10;&#9;Ordinal0 [0x00DD2438+1057848]&#10;&#9;Ordinal0 [0x00DF054A+1181002]&#10;&#9;Ordinal0 [0x00DEC435+1164341]&#10;&#9;Ordinal0 [0x00DE9CAF+1154223]&#10;&#9;Ordinal0 [0x00E19ADF+1350367]&#10;&#9;Ordinal0 [0x00E1974A+1349450]&#10;&#9;Ordinal0 [0x00E155AB+1332651]&#10;&#9;Ordinal0 [0x00DF2104+1188100]&#10;&#9;Ordinal0 [0x00DF2F59+1191769]&#10;&#9;GetHandleVerifier [0x010B2266+1549718]&#10;&#9;GetHandleVerifier [0x0115D4A7+2250711]&#10;&#9;GetHandleVerifier [0x00FB718B+521403]&#10;&#9;GetHandleVerifier [0x00FB6229+517465]&#10;&#9;Ordinal0 [0x00ECB79D+2078621]&#10;&#9;Ordinal0 [0x00ECFB58+2095960]&#10;&#9;Ordinal0 [0x00ECFC92+2096274]&#10;&#9;Ordinal0 [0x00ED9541+2135361]&#10;&#9;BaseThreadInitThunk [0x76D0FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77407A9E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77407A6E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given browser is open.......................................................failed
+And user is on google search page...........................................skipped
+When user enters a text in search box.......................................skipped
+And hits enter..............................................................skipped
+Then user is navigated to search results....................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 97.0.4692.71 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-83DRFKP', ip: '192.168.43.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00F2BDE3+2473443]
+	Ordinal0 [0x00EC6661+2057825]
+	Ordinal0 [0x00DD2438+1057848]
+	Ordinal0 [0x00DF054A+1181002]
+	Ordinal0 [0x00DEC435+1164341]
+	Ordinal0 [0x00DE9CAF+1154223]
+	Ordinal0 [0x00E19ADF+1350367]
+	Ordinal0 [0x00E1974A+1349450]
+	Ordinal0 [0x00E155AB+1332651]
+	Ordinal0 [0x00DF2104+1188100]
+	Ordinal0 [0x00DF2F59+1191769]
+	GetHandleVerifier [0x010B2266+1549718]
+	GetHandleVerifier [0x0115D4A7+2250711]
+	GetHandleVerifier [0x00FB718B+521403]
+	GetHandleVerifier [0x00FB6229+517465]
+	Ordinal0 [0x00ECB79D+2078621]
+	Ordinal0 [0x00ECFB58+2095960]
+	Ordinal0 [0x00ECFC92+2096274]
+	Ordinal0 [0x00ED9541+2135361]
+	BaseThreadInitThunk [0x76D0FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77407A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77407A6E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.GoogleSearchSteps.browser_is_open(GoogleSearchSteps.java:25)
+	at ✽.browser is open(file:///C:/Users/Pandurang/eclipse-workspace/CucumberJava/src/main/java/Features/GoogleSearch.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>

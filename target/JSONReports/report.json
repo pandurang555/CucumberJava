@@ -1,0 +1,85 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-14T07:02:07.002Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 97.0.4692.71 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-83DRFKP\u0027, ip: \u0027192.168.43.160\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00F2BDE3+2473443]\n\tOrdinal0 [0x00EC6661+2057825]\n\tOrdinal0 [0x00DD2438+1057848]\n\tOrdinal0 [0x00DF054A+1181002]\n\tOrdinal0 [0x00DEC435+1164341]\n\tOrdinal0 [0x00DE9CAF+1154223]\n\tOrdinal0 [0x00E19ADF+1350367]\n\tOrdinal0 [0x00E1974A+1349450]\n\tOrdinal0 [0x00E155AB+1332651]\n\tOrdinal0 [0x00DF2104+1188100]\n\tOrdinal0 [0x00DF2F59+1191769]\n\tGetHandleVerifier [0x010B2266+1549718]\n\tGetHandleVerifier [0x0115D4A7+2250711]\n\tGetHandleVerifier [0x00FB718B+521403]\n\tGetHandleVerifier [0x00FB6229+517465]\n\tOrdinal0 [0x00ECB79D+2078621]\n\tOrdinal0 [0x00ECFB58+2095960]\n\tOrdinal0 [0x00ECFC92+2096274]\n\tOrdinal0 [0x00ED9541+2135361]\n\tBaseThreadInitThunk [0x76D0FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77407A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77407A6E+238]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat stepDefinition.GoogleSearchSteps.browser_is_open(GoogleSearchSteps.java:25)\r\n\tat ✽.browser is open(file:///C:/Users/Pandurang/eclipse-workspace/CucumberJava/src/main/java/Features/GoogleSearch.feature:5)\r\n",
+              "duration": 18819890600,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "browser is open",
+            "match": {
+              "location": "stepDefinition.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on google search page",
+            "match": {
+              "location": "stepDefinition.GoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999400,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters a text in search box",
+            "match": {
+              "location": "stepDefinition.GoogleSearchSteps.user_enters_a_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "hits enter",
+            "match": {
+              "location": "stepDefinition.GoogleSearchSteps.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user is navigated to search results",
+            "match": {
+              "location": "stepDefinition.GoogleSearchSteps.user_is_navigated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/Features/GoogleSearch.feature",
+    "tags": []
+  }
+]
